@@ -1,0 +1,2 @@
+define(["lozad"],function(lozad){"use strict";return function(config,element){if(element[0].dataset.appearance!="lazyload"){return;}
+if(element&&element[0].childNodes.length){var lazyImages=element[0].querySelectorAll("[data-lazy]");if(lazyImages.length){var lazyload=lozad(lazyImages,{enableAutoReload:true,});return lazyload.observe();}}};});
